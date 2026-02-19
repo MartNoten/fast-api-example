@@ -20,11 +20,13 @@ python3 -m venv venv
 ### 2. Activate the Virtual Environment
 
 **On macOS/Linux:**
+
 ```bash
 source venv/bin/activate
 ```
 
 **On Windows:**
+
 ```bash
 venv\Scripts\activate
 ```
@@ -32,11 +34,13 @@ venv\Scripts\activate
 ### 3. Install Dependencies
 
 If you have a `requirements.txt` file:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 If you're setting up for the first time, install the core dependencies:
+
 ```bash
 pip install fastapi uvicorn[standard]
 ```
@@ -46,21 +50,25 @@ pip install fastapi uvicorn[standard]
 ### Adding a New Package
 
 1. **Install the package:**
+
    ```bash
    pip install <package-name>
    ```
 
    Example:
+
    ```bash
    pip install requests
    ```
 
 2. **Update requirements.txt:**
+
    ```bash
    pip freeze > requirements.txt
    ```
 
    Or manually add the package to `requirements.txt`:
+
    ```
    <package-name>==<version>
    ```
@@ -68,11 +76,13 @@ pip install fastapi uvicorn[standard]
 ### Changing/Updating Packages
 
 1. **Update a specific package:**
+
    ```bash
    pip install --upgrade <package-name>
    ```
 
 2. **Update all packages:**
+
    ```bash
    pip install --upgrade -r requirements.txt
    ```
@@ -85,6 +95,7 @@ pip install fastapi uvicorn[standard]
 ### Removing a Package
 
 1. **Uninstall the package:**
+
    ```bash
    pip uninstall <package-name>
    ```
@@ -157,6 +168,7 @@ platform-services-api/
 ### Port Already in Use
 
 If port 8000 is already in use, specify a different port:
+
 ```bash
 uvicorn main:app --port 8001 --reload
 ```
@@ -164,6 +176,7 @@ uvicorn main:app --port 8001 --reload
 ### Virtual Environment Issues
 
 If you encounter import errors, make sure:
+
 1. Your virtual environment is activated
 2. Dependencies are installed: `pip install -r requirements.txt`
 3. You're using the correct Python interpreter
@@ -171,6 +184,7 @@ If you encounter import errors, make sure:
 ### Package Installation Issues
 
 If package installation fails:
+
 - Ensure you have the latest pip: `pip install --upgrade pip`
 - Check your internet connection
 - Verify the package name is correct
