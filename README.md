@@ -132,6 +132,8 @@ Once the server is running, you can access:
 - **Interactive API Documentation (Swagger UI)**: http://localhost:8000/docs
 - **Alternative API Documentation (ReDoc)**: http://localhost:8000/redoc
 
+test 3
+
 ### Custom Port and Host
 
 To run on a different port or host:
