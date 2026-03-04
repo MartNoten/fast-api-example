@@ -20,4 +20,4 @@ EXPOSE 8000
 
 # Run uvicorn; use PORT env if set (e.g. Heroku), else 8000
 ENV PORT=8000
-CMD uvicorn main:app --host 0.0.0.0 --port ${PORT}
+CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
